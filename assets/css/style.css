@@ -63,94 +63,94 @@
 }
 
 /*=========== BASE ===========*/
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
 body,
 button,
 input,
-textarea{
+textarea {
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
 }
 
-body{
+body {
     background-color: var(--body-color);
-    color: var(--text-color); 
+    color: var(--text-color);
 }
 
-h1,h2,h3{
+h1,
+h2,
+h3 {
     color: var(--title-color);
     font-weight: var(--font-semibold);
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-button{
+button {
     cursor: pointer;
     border: none;
     outline: none;
 }
 
-img{
+img {
     max-width: 100%;
     height: auto;
 }
 
 /*=========== REUSABLE CSS CLASSES ===========*/
-.container{
+.container {
     max-width: 968px;
     margin: 0 1rem;
 }
 
-.grid{
+.grid {
     display: grid;
     gap: 1.25rem;
 }
 
-.main{
+.main {
     overflow: hidden;
 }
 
-.section{
+.section {
     padding: 4.5rem 0 1rem;
 }
 
 .section__title,
-.section__subtitle{
+.section__subtitle {
     text-align: center;
 }
 
-.section__title{
+.section__title {
     font-size: var(--h2-font-size);
-}
-
-.section__subtitle{
-    font-size: var(--h3-font-size);
     color: var(--first-color);
     margin-bottom: 2rem;
 }
 
-.section__subtitle{
+.section__subtitle {
+    display: block;
     font-size: var(--smaller-font-size);
     color: var(--text-color-light);
+
 }
 
 /*=========== HEADER AND NAVBAR ===========*/
-.header{
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -159,24 +159,24 @@ img{
     z-index: var(--z-fixed);
 }
 
-.nav{
+.nav {
     height: var(--header-height);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav__logo{
+.nav__logo {
     color: var(--first-color);
     font-weight: var(--font-medium);
     transition: .4s;
 }
 
-.nav__logo:hover{
+.nav__logo:hover {
     color: var(--first-color-alt);
 }
 
-.nav__menu{
+.nav__menu {
     position: fixed;
     bottom: 1rem;
     background-color: hsla(var(--second-hue), 32%, 16%, .8);
@@ -186,13 +186,13 @@ img{
     backdrop-filter: blur(10px);
 }
 
-.nav__list{
+.nav__list {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav__link{
+.nav__link {
     color: var(--text-color);
     font-size: 1.25rem;
     padding: .4rem;
@@ -201,59 +201,57 @@ img{
 }
 
 /* Active Link */
-.active-link{
-    background: linear-gradient(180deg, 
-                hsla(var(--first-hue), var(--sat), var(--lig), 1), 
-                hsla(var(--first-hue), var(--sat), var(--lig), .2)
-            );
+.active-link {
+    background: linear-gradient(180deg,
+            hsla(var(--first-hue), var(--sat), var(--lig), 1),
+            hsla(var(--first-hue), var(--sat), var(--lig), .2));
 
     box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), .4);
 }
 
 /*============ HOME ============*/
-.home__container{
+.home__container {
     position: relative;
     row-gap: 4.5rem;
     padding-top: 2rem;
 }
 
-.home__data{
+.home__data {
     text-align: center;
 }
 
 .home__greeting,
-.home__education{
+.home__education {
     font-size: var(--small-font-size);
     font-weight: var(--font-medium);
 }
 
-.home__greeting{
+.home__greeting {
     display: block;
     color: var(--title-color);
     margin-bottom: .25rem;
 }
 
-.home__education{
+.home__education {
     color: var(--text-color);
     margin-bottom: 2.5rem;
 }
 
-.home__name{
+.home__name {
     font-size: var(--biggest-font-size);
 }
 
-.home__img{
+.home__img {
     width: 160px;
 }
 
-.home__handle{
+.home__handle {
     justify-self: center;
     width: 190px;
     height: 293px;
-    background: linear-gradient(180deg, 
-                        hsla(var(--first-hue), var(--sat), var(--lig), 1), 
-                        hsla(var(--first-hue), var(--sat), var(--lig), .2)
-                    );
+    background: linear-gradient(180deg,
+            hsla(var(--first-hue), var(--sat), var(--lig), 1),
+            hsla(var(--first-hue), var(--sat), var(--lig), .2));
     border-radius: 10rem 10rem 1rem 1rem;
     display: flex;
     align-items: flex-end;
@@ -261,7 +259,7 @@ img{
     overflow: hidden;
 }
 
-.home__buttons{
+.home__buttons {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -269,18 +267,18 @@ img{
 }
 
 .home__social,
-.home__scroll{
+.home__scroll {
     position: absolute;
 }
 
-.home__social{
+.home__social {
     bottom: 5rem;
     left: 0;
     display: grid;
     row-gap: .5rem;
 }
 
-.home__social-link{
+.home__social-link {
     width: max-content;
     background-color: var(--container-color);
     color: var(--first-color);
@@ -291,12 +289,12 @@ img{
     transition: .4s;
 }
 
-.home__social-link:hover{
+.home__social-link:hover {
     background-color: var(--first-color);
     color: #fff;
 }
 
-.home__social::after{
+.home__social::after {
     content: '';
     width: 32px;
     height: 2px;
@@ -304,7 +302,7 @@ img{
     transform: rotate(90deg) translate(16px, 3px);
 }
 
-.home__scroll{
+.home__scroll {
     color: var(--first-color);
     right: -1.5rem;
     bottom: 4rem;
@@ -313,17 +311,17 @@ img{
     justify-items: center;
 }
 
-.home__scroll-icon{
+.home__scroll-icon {
     font-size: 1.25rem;
 }
 
-.home__scroll-name{
+.home__scroll-name {
     font-size: var(--smaller-font-size);
     transform: rotate(-90deg);
 }
 
 /*============= BUTTONS ==============*/
-.button{
+.button {
     align-items: center;
     display: inline-block;
     background-color: var(--first-color);
@@ -334,13 +332,59 @@ img{
     transition: .4s;
 }
 
-.button:hover{
+.button:hover {
     background-color: var(--first-color-alt);
     color: var(--body-color);
 }
 
-.button--ghost{
+.button--ghost {
     background-color: transparent;
     border: 2px solid var(--first-color);
     color: var(--first-color);
+}
+
+/*============== ABOUT ================*/
+.about__container{
+    row-gap: 2.5rem;
+}
+
+.about__img{
+    width: 220px;
+    border-radius: 1.5rem;
+    justify-self: center;
+}
+
+.about__data{
+    text-align: center;
+}
+
+.about__info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .5rem;
+    margin-bottom: 2rem;
+}
+
+.about__box{
+    background-color: var(--container-color);
+    border-radius: .75rem;
+    padding: .75rem .5rem;
+}
+
+.about__icon{
+    font-size: 1.5rem;
+    color: var(--first-color);
+    margin-bottom: .5rem;
+}
+
+.about__title{
+    font-size: var(--small-font-size);
+}
+
+.about__subtitle{
+    font-size: var(--tiny-font-size);
+}
+
+.about__description{
+    margin-bottom: 2rem;
 }
