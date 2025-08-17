@@ -209,6 +209,11 @@ img {
     box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), .4);
 }
 
+/* Change Background Header */
+.scroll-header{
+    box-shadow: 0 4px 4px hsl(0, 0%, 4%, .3);
+}
+
 /*============ HOME ============*/
 .home__container {
     position: relative;
