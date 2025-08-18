@@ -366,7 +366,7 @@ img {
 .about__info{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: .5rem;
+    gap: 1.5rem;
     margin-bottom: 2rem;
 }
 
@@ -392,4 +392,75 @@ img {
 
 .about__description{
     margin-bottom: 2rem;
+}
+
+/*============= SKILLS ============*/
+.skills__container{
+    row-gap: 2rem;
+    padding-top: 1rem;
+}
+
+.skills__content{
+    background-color: var(--container-color);
+    padding: 1.5rem;
+    border-radius: 1.25rem;
+}
+
+.skills__title{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    color: var(--first-color);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.skills__box{
+    display: flex;
+    justify-content: center;
+    column-gap: 2.5rem;
+}
+
+.skills__group,
+.skills__data,
+.skills__blob{
+    display: grid;
+}
+
+.skills__group{
+    grid-template-columns: repeat(3,1fr);
+    gap: 2.5rem 2rem;
+}
+
+.skills__data{
+    justify-content: center;
+    text-align: center;
+}
+
+.skills__blob{
+    width: 80px;
+    height: 120px;
+    place-items: center;
+}
+
+/* Animationa Skills */
+.skills__blob:hover img{
+    animation: bounce-skills 1s;
+}
+
+@keyframes bounce-skills {
+    0%{
+        transform: translate(0);
+    }
+    20%{
+        transform: translateY(-6px);
+    }
+    40%{
+        transform: translate(0);
+    }
+    60%{
+        transform: translateY(-3px);
+    }
+    80%{
+        transform: translate(0);
+    }
 }
