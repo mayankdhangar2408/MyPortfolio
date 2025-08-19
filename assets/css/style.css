@@ -348,6 +348,15 @@ img {
     color: var(--first-color);
 }
 
+.button--flex{
+    display: inline-flex;
+    align-items: center;
+}
+
+.button--small{
+    padding: 0.25rem .5rem;
+    font-size: var(--smaller-font-size);
+}
 /*============== ABOUT ================*/
 .about__container{
     row-gap: 2.5rem;
@@ -472,11 +481,6 @@ img {
     margin-bottom: 2rem;
 }
 
-.button--flex{
-    display: inline-flex;
-    align-items: center;
-}
-
 .qualification__button{
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
@@ -506,7 +510,7 @@ img {
 .qualification__subtitle{
     display: inline-block;
     font-size: var(--small-font-size);
-    margin-bottom: 1rem;
+    margin-bottom: .75rem;
 }
 
 .qualification__calander{
@@ -540,4 +544,40 @@ img {
 
 .qualification__button.qualification__active{
     color: var(--first-color);
+}
+
+/*============== PORTFOLIO =================*/
+.portfolio__container{
+    padding-top: 1rem;
+}
+
+.portfolio__card{
+    background-color: var(--container-color);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.portfolio__img{
+    border-radius: 1rem;
+    margin-bottom: .75rem;
+}
+
+.portfolio__title{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: .25rem;
+}
+
+.portfolio__description{
+    margin-bottom: .5rem;
+}
+
+.portfolio__calander{
+    margin-bottom: .25rem;
+    font-size: var(--smaller-font-size);
+    color: var(--title-color);
+}
+
+.portfolio__icon{
+    margin-right: .25rem;
 }
