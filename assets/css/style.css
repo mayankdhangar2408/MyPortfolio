@@ -84,6 +84,7 @@ textarea {
 body {
     background-color: var(--body-color);
     color: var(--text-color);
+    transition: .4s; /* For light mode animation */
 }
 
 h1,
@@ -110,6 +111,73 @@ button {
 img {
     max-width: 100%;
     height: auto;
+}
+
+/*=============== THEME =============*/
+.change-theme {
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.change-theme:hover {
+    color: var(--first-color);
+}
+
+/*=============== Variables Light Theme =============*/
+body.light-theme {
+    --title-color: hsl(var(--second-hue), 15%, 15%);
+    --text-color: hsl(var(--second-hue), 8%, 35%);
+    --body-color: hsl(var(--second-hue), 100%, 99%);
+    --container-color: #fff;
+}
+
+/*================ Colour changes in some parts of website, in light theme ================*/
+.light-theme .scroll-header{
+    box-shadow: 0 2px 4px hsla(0%, 0%, 1%, .1);
+}
+
+.light-theme .nav__menu{
+    background-color: hsla(var(--second-hue), 32%, 90%, .8);
+}
+
+.light-theme .section__subtitle{
+    color: var(--text-color);
+}
+
+.light-theme .home__social::after,
+.light-theme .footer__social-link{
+    background-color: var(--title-color);
+}
+
+.light-theme .home__social-link,
+.light-theme .about__box,
+.light-theme .skills__content,
+.light-theme .portfolio__card,
+.light-theme .contact__card{
+    box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, .1);
+}
+
+.light-theme .home__social-link,
+.light-theme .home__scroll,
+.light-theme .button,
+.light-theme .button:hover,
+.light-theme .footer__title,
+.light-theme .footer__link,
+.light-theme .footer__copy{
+    color: var(--title-color);
+}
+
+.light-theme::-webkit-scrollbar{
+    background-color: hsl(var(--second-hue), 8%, 66%);
+}
+
+.light-theme::-webkit-scrollbar-thumb{
+    background-color: hsl(var(--second-hue), 8%, 54%);
+}
+
+.light-theme::-webkit-scrollbar-thumb:hover{
+    background-color: hsl(var(--second-hue), 8%, 44%);
 }
 
 /*=========== REUSABLE CSS CLASSES ===========*/
@@ -157,6 +225,7 @@ img {
     width: 100%;
     background-color: var(--body-color);
     z-index: var(--z-fixed);
+    transition: .4s; /* For light mode animation */
 }
 
 .nav {
@@ -184,6 +253,7 @@ img {
     border-radius: 4rem;
     padding: 1rem 2.25rem;
     backdrop-filter: blur(10px);
+    transition: .4s; /* For light mode animation */
 }
 
 .nav__list {
@@ -207,6 +277,7 @@ img {
             hsla(var(--first-hue), var(--sat), var(--lig), .2));
 
     box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), .4);
+    color: var(--title-color);
 }
 
 /* Change Background Header */
@@ -593,45 +664,45 @@ img {
     padding-bottom: 3rem;
 }
 
-.contact__title{
+.contact__title {
     text-align: center;
     font-size: var(--h3-font-size);
     margin-bottom: 1.5rem;
 }
 
-.contact__info{
+.contact__info {
     display: grid;
     gap: 1rem;
 }
 
-.contact__card{
+.contact__card {
     background-color: var(--container-color);
     padding: 1rem;
     border-radius: .75rem;
     text-align: center;
 }
 
-.contact__card-icon{
+.contact__card-icon {
     font-size: 2rem;
     color: var(--title-color);
     margin-bottom: .25rem;
 }
 
 .contact__card-title,
-.contact__card-data{
+.contact__card-data {
     font-size: var(--small-font-size);
 }
 
-.contact__card-title{
-    font-weight: var(--font-medium);  
+.contact__card-title {
+    font-weight: var(--font-medium);
 }
 
-.contact__card-data{
+.contact__card-data {
     display: block;
     margin-bottom: .75rem;
 }
 
-.contact__button{
+.contact__button {
     color: var(--first-color);
     font-size: var(--small-font-size);
     display: flex;
@@ -640,22 +711,22 @@ img {
     column-gap: .25rem;
 }
 
-.contact__button:hover .contact__button-icon{
+.contact__button:hover .contact__button-icon {
     transform: translateX(.25rem);
 }
 
-.contact__button-icon{
+.contact__button-icon {
     font-size: 1rem;
     transition: .4s;
 }
 
-.contact__form-div{
+.contact__form-div {
     position: relative;
     margin-bottom: 2rem;
     height: 4rem;
 }
 
-.contact__form-input{
+.contact__form-input {
     position: absolute;
     top: 0;
     left: 0;
@@ -670,7 +741,7 @@ img {
     z-index: 1;
 }
 
-.contact__form-tag{
+.contact__form-tag {
     position: absolute;
     top: -.75rem;
     left: 1.25rem;
@@ -680,56 +751,56 @@ img {
     z-index: var(--z-tooltip);
 }
 
-.contact__form-area{
+.contact__form-area {
     height: 11rem;
 }
 
-.contact__form-area textarea{
+.contact__form-area textarea {
     resize: none;
 }
 
 /*==================  =================*/
-.footer{
+.footer {
     background-color: var(--first-color);
 }
 
-.footer__container{
+.footer__container {
     padding: 2rem 0 6rem;
 }
 
 .footer__title,
-.footer__link{
+.footer__link {
     color: var(--body-color);
 }
 
-.footer__title{
+.footer__title {
     text-align: center;
     margin-bottom: 2rem;
 }
 
-.footer__list{
+.footer__list {
     display: flex;
     justify-content: center;
     column-gap: 1.5rem;
-    margin-bottom: 2rem;  
+    margin-bottom: 2rem;
 }
 
-.footer__social{
+.footer__social {
     display: flex;
     justify-content: center;
     column-gap: 1.25rem;
 }
 
-.footer__social-link{
+.footer__social-link {
     background-color: var(--body-color);
     color: var(--first-color);
-    padding:0 .25rem;
+    padding: 0 .25rem;
     border-radius: .25rem;
     font-size: var(--h3-font-size);
     display: inline-flex;
 }
 
-.footer__copy{
+.footer__copy {
     display: block;
     margin-top: 3.5rem;
     color: var(--container-color);
@@ -738,17 +809,17 @@ img {
 }
 
 /*================= SCROLL BAR ===============*/
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: .6rem;
     border-radius: .5rem;
     background-color: hsl(var(--second-hue), 8%, 38%);
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     border-radius: .5rem;
     background-color: hsl(var(--second-hue), 8%, 26%);
 }
 
-::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:hover {
     background-color: hsl(var(--second-hue), 8%, 20%);
 }
