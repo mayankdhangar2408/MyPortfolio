@@ -419,6 +419,8 @@ body.light-theme {
     background-color: transparent;
     border: 2px solid var(--first-color);
     color: var(--first-color);
+    display: flex;
+    align-items: center;
 }
 
 .button--flex {
@@ -495,6 +497,9 @@ body.light-theme {
     color: var(--first-color);
     text-align: center;
     margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .skills__box {
