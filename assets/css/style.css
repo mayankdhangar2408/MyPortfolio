@@ -155,7 +155,7 @@ body.light-theme {
 .light-theme .skills__content,
 .light-theme .portfolio__card,
 .light-theme .contact__card{
-    box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, .1);
+    box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, .2);
 }
 
 .light-theme .home__social-link,
@@ -672,6 +672,15 @@ body.light-theme {
     margin-bottom: .25rem;
     font-size: var(--smaller-font-size);
     color: var(--title-color);
+}
+
+.portfolio__skills-button{
+    background-color: hsla(var(--first-hue), var(--sat), var(--lig), .2);
+    font-size: var(--tiny-font-size);
+    padding:.25rem .35rem;
+    border-radius: .3rem;
+    margin-bottom: .5rem;
+    font-weight: var(--font-medium);
 }
 
 .portfolio__icon {
