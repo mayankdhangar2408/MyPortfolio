@@ -1,29 +1,40 @@
-# 🧑‍💻 Personal Portfolio Website
+# 🧑‍💻 Personal Portfolio Website  
 
-This is a **full-stack personal portfolio website** built using the **MERN Stack (MongoDB, Express.js, React.js, Node.js)**. It showcases my skills, projects, experience, and provides a platform to connect with potential clients or recruiters.
-
-## 🚀 Features
-
-- ✨ Modern, responsive UI built with React
-- 📜 About, Projects, Skills, Contact sections
-- 📬 Contact form with backend email handling
-- 🌐 Project showcase with images and GitHub/live demo links
-- 🛠️ Admin panel to manage content (optional)
-- 🔐 Secured API with validation and environment config
+This is a **personal portfolio website** built using **HTML, CSS, and JavaScript**.  
+It showcases my skills, projects, experience, and provides a platform to connect with potential clients or recruiters.  
 
 ---
 
-## 🛠 Tech Stack
+## 🚀 Features  
 
-**Frontend:**
-- React.js
-- React Router
-- Axios
-- Bootstrap / Tailwind (customizable)
+- ✨ Modern, responsive UI with clean design  
+- 📜 About, Projects, Skills, Contact sections  
+- 📬 Contact form with form submission handling  
+- 🌐 Project showcase with images and GitHub/live demo links  
+- 🎨 Smooth animations and interactive components  
 
-**Backend:**
-- Node.js
-- Express.js
-- MongoDB (Mongoose ODM)
-- Nodemailer (for email)
+---
 
+## 🛠 Tech Stack  
+
+**Frontend:**  
+- HTML5  
+- CSS3  
+- JavaScript (ES6+)  
+
+**Deployment (optional):**  
+- GitHub Pages  
+- Netlify   
+
+---
+
+## 📂 Project Structure  
+
+```bash
+├── home.html
+├── README.md
+└── assets/
+    ├── css/
+    ├── images/
+    ├── js/
+    └── pdf/
