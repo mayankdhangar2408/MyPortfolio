@@ -1,0 +1,31 @@
+filename,name,email,score,matched_keywords_count,matched_keywords,matched_skills,text_preview
+Kanishka Thakur.pdf,Kanishka Thakur,,74.0,1,python,"python, tensorflow, pytorch","Kanishka Thakur  
+Mathura, Uttar Pradesh, India (281004)  
+kanishkathakur863@gmail.com  | +91 8279526709 | LinkedIn  | GitHub  | 
+   EXPERIENCE  
+ Summer Intern, Indian Oil Corporation India (IOCL, Mathura)                                                                                |May – June 2025”  
+• Developed and enhanced internal web applications using ASP.NET & .NET Framework . 
+• Redesigned company web pages with HTML5, CSS3, Bootstrap , improving UI/UX and mobile responsiveness . 
+• Collaborated with IT team to modernize the front -end, ensuring cross -device compatibility . 
+• Utilized Visual Studio 2022  for enterprise -level development and deployment practices.  
+ 
+   PROJECTS  
+ 
+DataLens - Data Visualization Dashboard (Live)  (Source Code)  
+( HTML5, CSS3, JavaScript, Git, GitHub )  
+• Designed and deployed an interactive dashboard that presents complex datasets through clean, customizable visualizations (cha rts, graphs, 
+maps), enabling rapid insight and decision making.  
+• Optimized backend data processing to reduce load times by ~50%, ensuring smooth interactions even with large datasets. . 
+• Employed responsive design and efficient rendering techniques to maintain performance across devices.  
+Expense Tracker - WalletBuddy  (Source Code)  
+( HTML5, CSS3, JavaScript,  MongoDB, React.js, Node.js,  Git, GitHub )  
+• Built a full-stack MERN expense tracker  supporting income/expense management.  
+• Integrated MongoDB Atlas  for secure cloud storage of user transactions.  
+• Designed a modern responsive dashboard  with light theme & sidebar navigation . 
+• Added real-time income graphs  on login & tracker pages.  
+ 
+Personal Portfolio (Live)  (Source Code)  
+( HTML5, CSS3, JavaScript, Git, GitHub )  
+• Designed a responsive portfolio showcasing projects & achievements.  
+• Enabled recruiters to directly access my resume, improving portfolio usability.  
+• Set up continuous deployment with GitHub + Netlify . "
